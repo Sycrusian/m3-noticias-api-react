@@ -1,0 +1,22 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-blue-1: #0000ff;
+  --color-blue-2: #4444ff;
+
+  --color-red: #ff4444;
+
+  --color-grey-4: #444444;
+
+  --typeface-1: "Iceland", cursive;
+  --typeface-2: "Calibre", sans-serif;
+}
+
+body {
+  background-color: var(--color-blue-2);
+}
+
+body.waiting * {
+  cursor: progress;
+}
