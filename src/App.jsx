@@ -11,6 +11,8 @@ const App = () => {
 
   const getNews = async () => {
     try {
+      const favorites = localStorage.getItem("@fakenews");
+      !favorites && localStorage.setItem("@fakenews", JSON.stringify([]));
       const { data } = await blogApi.get("/news");
       setNewsList(data);
     }
